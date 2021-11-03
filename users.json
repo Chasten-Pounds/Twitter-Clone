@@ -1,0 +1,73 @@
+{
+    "users": {
+       "0": {
+            "firstName": "Darth",
+            "lastName": "vader",
+            "userName": "LordVader",
+            "iD": "1977"
+    
+
+        },
+        "1":{
+            "firstName": "Luke",
+            "lastName": "Skywalker",
+            "userName": "TheLastJedi",
+            "iD": "1983"
+            
+        },
+        "2":  {
+            "firstName": "Ben",
+            "lastName": "Kenobi",
+            "userName": "Obi-Wan",
+            "iD": "1999"
+        
+        },
+        "3": {
+            "firstName": "Han",
+            "lastName": "Solo",
+            "userName": "MilleniumFalcon",
+            "iD": "1980"
+            
+        }
+
+    },
+
+
+    "tattles": {
+        "0":{
+
+            "userName": "LordVader",
+            "iD": "1977",
+            "message": "This is vaders tweet!",
+            "timeStamp": "03:34 PM - Oct 1, 2021",
+            "image": "images/darthvader.jpg"
+
+        },
+        "1":{
+              
+            "userName": "TheLastJedi",
+            "iD": "1983",
+            "message": "This is lukes tweet!",
+            "timeStamp": "05:27 PM - Oct 1, 2021",
+            "image": "images/Luke.jpg"
+        },
+        "2":  {
+          
+            "userName": "Obi-Wan",
+            "iD": "1999",
+            "message": "This is bens tweet!",
+            "timeStamp": "07:15 PM - Oct 2, 2021",
+            "image": "images/ben.jpg"
+        },
+        "3": {
+    
+            "userName": "MilleniumFalcon",
+            "iD": "1980",
+            "message": "This is solos tweet!",
+            "timeStamp": "12:34 AM - Oct 3, 2021",
+            "image": "images/solo.jpg"
+        }
+
+
+    }
+}
