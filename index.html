@@ -29,11 +29,6 @@
         
 </head>
 <body class="text-center" >
-     <script>
-   function onSubmit(token) {
-     document.getElementById("validate").submit();
-   }
- </script>
 
 <div class="container">
     <main class="form-signin">
@@ -54,6 +49,12 @@
             <a  class=" btn btn-primary btn-lg btn-block" role="button" onclick="validation(`${id}`)">Sign in</a>
 
             <a  id="validate"  style="visibility: hidden;" class="btn btn-primary btn-lg btn-block" role="button" id="sign-in" class="g-recaptcha" data-sitekey="6Lf-5v0pAAAAAEIXfUU8d-g35secFnGYI5iGNJvf" data-callback='onSubmit' data-action='submit'></a>
+                 <script>
+   function onSubmit(token) {
+     document.getElementById("validate").submit();
+   }
+ </script>
+
            
             <p class="mt-5 mb-3" >© 2021</p>
             
@@ -67,38 +68,7 @@
 
 <div id="snackbar2">Invalid Username</div>
 
-    <script type="module">
-  // Import the functions you need from the SDKs you need
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-import { initializeApp } from "firebase/app";
-import { initializeAppCheck, ReCaptchaV3Provider } from "firebase/app-check";
-
-const app = initializeApp({
-   const firebaseConfig = {
-    apiKey: "AIzaSyBCjd6It116FYNxHjifAlVG8Oqut6xmMJw",
-    authDomain: "tattletale-6f92d.firebaseapp.com",
-    databaseURL: "https://tattletale-6f92d-default-rtdb.firebaseio.com",
-    projectId: "tattletale-6f92d",
-    storageBucket: "tattletale-6f92d.appspot.com",
-    messagingSenderId: "343619266412",
-    appId: "1:343619266412:web:0761cc52191dd430a23549"
-  };
-
-});
-
-// Pass your reCAPTCHA v3 site key (public key) to activate(). Make sure this
-// key is the counterpart to the secret key you set in the Firebase console.
-const appCheck = initializeAppCheck(app, {
-  provider: new ReCaptchaV3Provider('6Lf-5v0pAAAAAEIXfUU8d-g35secFnGYI5iGNJvf'),
-
-  // Optional argument. If true, the SDK automatically refreshes App Check
-  // tokens as needed.
-  isTokenAutoRefreshEnabled: true
-});
-
-
-</script>
+ 
     
 </body>
 
