@@ -75,7 +75,16 @@ import { initializeApp } from "firebase/app";
 import { initializeAppCheck, ReCaptchaV3Provider } from "firebase/app-check";
 
 const app = initializeApp({
-  // Your firebase configuration object
+   const firebaseConfig = {
+    apiKey: "AIzaSyBCjd6It116FYNxHjifAlVG8Oqut6xmMJw",
+    authDomain: "tattletale-6f92d.firebaseapp.com",
+    databaseURL: "https://tattletale-6f92d-default-rtdb.firebaseio.com",
+    projectId: "tattletale-6f92d",
+    storageBucket: "tattletale-6f92d.appspot.com",
+    messagingSenderId: "343619266412",
+    appId: "1:343619266412:web:0761cc52191dd430a23549"
+  };
+
 });
 
 // Pass your reCAPTCHA v3 site key (public key) to activate(). Make sure this
@@ -88,19 +97,7 @@ const appCheck = initializeAppCheck(app, {
   isTokenAutoRefreshEnabled: true
 });
 
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyBCjd6It116FYNxHjifAlVG8Oqut6xmMJw",
-    authDomain: "tattletale-6f92d.firebaseapp.com",
-    databaseURL: "https://tattletale-6f92d-default-rtdb.firebaseio.com",
-    projectId: "tattletale-6f92d",
-    storageBucket: "tattletale-6f92d.appspot.com",
-    messagingSenderId: "343619266412",
-    appId: "1:343619266412:web:0761cc52191dd430a23549"
-  };
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
 </script>
     
 </body>
