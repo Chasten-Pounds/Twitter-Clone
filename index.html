@@ -24,10 +24,16 @@
     <script src="classes/tattleDBModel.js"></script>
     <script src="app.js"></script>
     <script src="util.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
         
         
 </head>
 <body class="text-center" >
+     <script>
+   function onSubmit(token) {
+     document.getElementById("sign-in").submit();
+   }
+ </script>
 
 <div class="container">
     <main class="form-signin">
@@ -45,7 +51,10 @@
             <p class=" mt-5 mb-3" >Valid-userIds: "lordvader", "thelastjedi", "obi-wan", "milleniumfalcon" </p>
             
             <br>
-            <a  class=" btn btn-primary btn-lg btn-block" role="button" onclick="validation(`${id}`)">Sign in</a>
+            <a  id="sign-in" class="g-recaptcha" 
+        data-sitekey="reCAPTCHA_site_key" 
+        data-callback='onSubmit' 
+        data-action='submit' class=" btn btn-primary btn-lg btn-block" role="button" onclick="validation(`${id}`)">Sign in</a>
            
             <p class="mt-5 mb-3" >© 2021</p>
             
